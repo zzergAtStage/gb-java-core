@@ -90,3 +90,5 @@
             - ./bin:/java-core/out com.zergatstage.javacore.seminar01.Application
 
     ```
+
+    ``` sudo docker-compose docker-compose-exec.yaml up```
