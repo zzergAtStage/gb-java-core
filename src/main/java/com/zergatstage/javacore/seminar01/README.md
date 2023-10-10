@@ -81,9 +81,9 @@
     services:
         app:
         image: bellsoft/liberica-openjdk-alpine:11.0.16.1-1
-        command: java -classpath /java-core/out ru.gb.jcore.sample.Main
+        command: java -classpath /java-core/out com.zergatstage.javacore.seminar01.Application
         volumes:
-            - ./bin:/java-core/out com.zergatstage.javacore.seminar01.Application
+            - ./bin:/home/sb/java-core/src/main/java
 
     ```
 
