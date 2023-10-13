@@ -3,7 +3,8 @@
 
 ## Java Core HomeWorks
 ### Seminar 01  
-
+<details>
+    <summary> tasks and  </summary>
 01. Task 01 HW
     01. [Application](/src/main/java/com/zergatstage/javacore/seminar01) in packages and its compilation  
     Commands: ```tree```  
@@ -96,3 +97,5 @@
     sudo docker-compose docker-compose-exec.yaml up
     
     ```
+</details>
+### [Seminar 03](/src/main/java/com/zergatstage/javacore/seminar02)
