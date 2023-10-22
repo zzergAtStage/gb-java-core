@@ -12,7 +12,7 @@ public class ThreadsWelcome {
             name.setPriority(HIGH_PRIORITY);
 
             Welcome welcome = new Welcome();
-            welcome.setPriority(HIGH_PRIORITY);
+            welcome.setPriority(LOW_PRIORITY);
             //set priority
 
             welcome.start();

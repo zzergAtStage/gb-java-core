@@ -2,7 +2,7 @@ package com.zergatstage.javacore.lesson03;
 
 import lombok.Getter;
 @Getter
-public class Cat extends Animal{
+public class Cat extends Animal implements Jumpable{
     private static int counter;
     private final int number;
 
@@ -15,5 +15,10 @@ public class Cat extends Animal{
         return "Cat{" +
                 "number=" + number +
                 "} " + super.toString();
+    }
+
+    @Override
+    public boolean isJumpable() {
+        return true;
     }
 }

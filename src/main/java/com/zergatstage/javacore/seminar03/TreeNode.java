@@ -1,4 +1,4 @@
-package lesson3;
+package com.zergatstage.javacore.seminar03;
 
 /**
  * Найти ближайшего общего предка двух узлов дерева.
