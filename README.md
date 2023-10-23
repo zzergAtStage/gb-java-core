@@ -96,3 +96,5 @@
     sudo docker-compose docker-compose-exec.yaml up
     
     ```
+### Seminar 03
+[Lists and solutions](src/main/java/com/zergatstage/javacore/seminar03/README.md)
