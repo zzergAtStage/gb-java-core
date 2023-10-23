@@ -13,11 +13,22 @@ public class Person implements Comparable<Person>{
     private String name;
     private int age;
     private int salary;
+    private int birthDay;
+    private int birthMonth;
+    private int birthYear;
 
     public Person(int age) {
         this.age = age;
     }
-
+    // to maintain legacy code ^_^
+    public  Person(String name, int age,  int salary){
+        this.age = age;
+        this.name = name;
+        this.salary = salary;
+    }
+    public int[] getBirthNumbers(){
+        return new int[]{birthDay, birthMonth, birthYear};
+    }
     /**
      * Сравнивает объекты по возрасту
      * Позволяет сортировать в листе
@@ -33,7 +44,7 @@ public class Person implements Comparable<Person>{
     public int compareByAgeShift(int dd, int mm, int yyyy){
         //as bitwise
         int emplAge = dd + (mm<<6) + (yyyy<<11);
-        int compAge = 1;
+        int compAge = birthDay + (birthMonth<<6) + (birthYear<<11);
         return compAge - emplAge;
     }
 
