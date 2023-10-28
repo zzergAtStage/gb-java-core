@@ -13,23 +13,17 @@ public class Customer {
     private static int customerCounter;
     private int customerId;
     String customerDescription;
-    private static HashMap<Integer,Customer> customers = new HashMap<>();
     public Customer(String customerDescription){
         ++customerCounter;
         this.customerId = customerCounter;
         this.customerDescription = customerDescription;
-
     }
 
-    static boolean clientExists(int customerId) {
-        return customers.containsKey(customerId);
-    }
+    public static boolean doesCustomerExists(CustomerDataManager customers, int key){
+       return customers.isCustomerExists(key);
 
-    public static Customer addCustomerToDataLake(Customer customer){
-        customers.put(customer.getCustomerId(), customer);
-        return  customer;
     }
-    @Getter public static class NoClientFoundException extends Throwable{
+    @Getter public static class NoClientFoundException extends RuntimeException{
         private final String userMessage;
         NoClientFoundException(int clientId){
             this.userMessage = "There is no client with Id = " + clientId;

@@ -18,9 +18,9 @@ public class Order {
 
 
 
-    public static Order makeOrder(int customerId, List<Integer> goodsInCart ) throws Customer.NoClientFoundException {
+    public static Order makeOrder(int customerId, List<Integer> goodsInCart , CustomerDataManager customers) throws Customer.NoClientFoundException {
         //call checks
-        if (!Customer.clientExists(customerId)) throw new Customer.NoClientFoundException(customerId);
+        if (!(customers.isCustomerExists(customerId))) throw new Customer.NoClientFoundException(customerId);
         return new Order( ++orderCounter, customerId, goodsInCart);
     }
 
