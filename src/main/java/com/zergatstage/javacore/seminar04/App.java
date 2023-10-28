@@ -63,7 +63,7 @@ public class App {
         List<Integer> goodsInCart = new ArrayList<>();
         goodsInCart.add(1);
         goodsInCart.add(1);
-        goodsInCart.add(3);
+        goodsInCart.add(8);
 
         List<Order> orders = new ArrayList<>();
         try{
@@ -74,7 +74,7 @@ public class App {
         //outdated client
             orders.add(Order.makeOrder(clFromStreet.getCustomerId(),goodsInCart, customers));
         }catch (Customer.NoClientFoundException e){
-            System.out.println(e.getUserMessage() + "\nOrder didn't created!\n" + Arrays.toString(e.getStackTrace()));
+            System.out.println("\nThe order wasn't created.\n" + e.getUserMessage() +"\n"+  Arrays.toString(e.getStackTrace()));
         }
         System.out.println(orders);
     }

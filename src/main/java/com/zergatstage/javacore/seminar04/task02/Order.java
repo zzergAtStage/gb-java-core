@@ -16,11 +16,23 @@ public class Order {
     private List<Integer> itemsInChart;
 
 
-
-
+    /**
+     * Main method to create orger with client id, cart, and goods
+     * @param customerId Client ID
+     * @param goodsInCart Cart
+     * @param customers List of customers
+     * @return new order
+     * @throws Customer.NoClientFoundException
+     */
     public static Order makeOrder(int customerId, List<Integer> goodsInCart , CustomerDataManager customers) throws Customer.NoClientFoundException {
         //call checks
         if (!(customers.isCustomerExists(customerId))) throw new Customer.NoClientFoundException(customerId);
+        goodsInCart.stream()
+                .peek(item -> {
+                    if (!goodsInCart.contains(item)) {
+                        throw new Item.NoItemsOnStoreAvailableException(2);
+                    }
+                });
         return new Order( ++orderCounter, customerId, goodsInCart);
     }
 
