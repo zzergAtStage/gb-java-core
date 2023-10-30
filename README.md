@@ -137,3 +137,6 @@
 </details>
 
 > [Solution](.src/main/java/com/zergatstage/javacore/seminar04/App)  
+
+
+# [Seminar05] (https://github.com/zzergAtStage/gb-java-core/blob/seminar04/src/main/java/com/zergatstage/javacore/seminar05/README.md)

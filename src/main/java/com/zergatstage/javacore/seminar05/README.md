@@ -12,4 +12,4 @@
             } ``` 
 
 
-Solution: [Seminar05.App]()
+Solution: [Seminar05.App](https://github.com/zzergAtStage/gb-java-core/blob/seminar04/src/main/java/com/zergatstage/javacore/seminar05/App.java)
