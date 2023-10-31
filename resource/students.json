@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice",
+    "grades": [3, 4, 5, 5, 5],
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Bob",
+    "grades": [4, 5, 3, 5, 4],
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Carol",
+    "grades": [5, 4, 3, 2, 1],
+    "speciality": "Physics"
+  },
+  {
+    "name": "Dave",
+    "grades": [3, 4, 5, 5, 2],
+    "speciality": "Chemistry"
+  },
+  {
+    "name": "Eve",
+    "grades": [4, 5, 5, 5, 5],
+    "speciality": "Biology"
+  },
+  {
+    "name": "Frank",
+    "grades": [5, 4, 3, 4, 4],
+    "speciality": "English"
+  },
+  {
+    "name": "Gail",
+    "grades": [5, 4, 5, 4, 5],
+    "speciality": "History"
+  },
+  {
+    "name": "Henry",
+    "grades": [4, 5, 3, 1, 2],
+    "speciality": "Geography"
+  },
+  {
+    "name": "Irene",
+    "grades": [5, 4, 3, 2, 1],
+    "speciality": "Economics"
+  },
+  {
+    "name": "John",
+    "grades": [3, 4, 5, 1, 2],
+    "speciality": "Psychology"
+  }
+]
